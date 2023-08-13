@@ -60,7 +60,7 @@ CREATE TABLE `livros` (
 CREATE TABLE `emprestimos` (
   `id_emprestimo` INT PRIMARY KEY AUTO_INCREMENT, -- ID único do empréstimo.
   `id_usuario_fk` INT, -- Chave estrangeira referenciando usuários.
-  `id_livro_fk` INT, -- Chave estrangeira referenciando livros.
+  `id_livro_fk` INT, -- Chave estrangeira referenciando livros
   FOREIGN KEY (id_usuario_fk) REFERENCES usuarios (id_usuario),
-  FOREIGN KEY (id_livro_fk) REFERENCES livros (id_livro)
+  FOREIGN KEY (id_livro_fk) REFERENCES livros (id_livro) 
 );
